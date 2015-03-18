@@ -1,0 +1,16 @@
+﻿<Window x:Class="GenerateMACKey.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="412" Width="525">
+    <Grid>
+        <Label x:Name="lblMacDescription" Content="Machine Key for Web.config in Web Farms" Margin="10,10,10,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button Content="Generate Key" Margin="10,188,10,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="txtValidationKey" Height="53" Margin="10,67,10,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Seed Value" IsEnabled="False"/>
+        <TextBox x:Name="txtDecryptionKey" Height="27" Margin="10,156,10,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label Content="Validation Key" Margin="10,36,10,0" VerticalAlignment="Top"/>
+        <Label Content="Decryption Key" Margin="10,125,10,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreateWebConfig" Content="Create Web.Config section" Margin="10,215,10,0" VerticalAlignment="Top" Height="37" Click="btnCreateWebConfig_Click" IsEnabled="False"/>
+        <TextBox x:Name="txtWebConfig" Margin="10,257,10,10" TextWrapping="Wrap"/>
+
+    </Grid>
+</Window>
