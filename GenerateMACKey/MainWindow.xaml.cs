@@ -63,6 +63,7 @@ namespace GenerateMACKey
             aspnet20machinekey.Append("validationKey=\"" + txtValidationKey.Text + "\"\n");
             aspnet20machinekey.Append("decryptionKey=\"" + txtDecryptionKey.Text + "\"\n");
             aspnet20machinekey.Append("validation=\"SHA1\" decryption=\"AES\" />\n");
+            aspnet20machinekey.Append("<pages enableViewStateMac=\"true\" viewStateEncryptionMode=\"Auto\" />\n");
             txtWebConfig.Text = aspnet20machinekey.ToString();
         }
     }
